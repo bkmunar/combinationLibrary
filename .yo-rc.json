@@ -1,0 +1,14 @@
+{
+  "generator-bower-package": {
+    "context": {
+      "bower_name": "combination-library",
+      "bower_title": "Combination Library",
+      "bower_desc": "Creates combinations",
+      "bower_version": "0.0.1",
+      "bower_url": "",
+      "bower_repo": "git://.git",
+      "bower_bugs": "/issues",
+      "full_name": "Bryan Munar and Chris Dunn"
+    }
+  }
+}
