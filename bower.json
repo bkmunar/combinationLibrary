@@ -1,0 +1,19 @@
+{
+  "name": "combinationLibrary",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bkmunar/combinationLibrary",
+  "authors": [
+    "Bryan Munar <bmunar@guidewire.com>"
+  ],
+  "description": "Creates combinations",
+  "main": "dist/combinationlibrary.min.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
