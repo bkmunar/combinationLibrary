@@ -39,8 +39,9 @@
     };
 
     var getCombinationsHelper = function (arr, n) {
+
+        var totalCombinationsArray = [];
         if (n === 1) {
-            var totalCombinationsArray = [];
             arr.forEach(function (element) {
                 element.forEach(function (element2) {
                     totalCombinationsArray.push([element2]);
@@ -49,7 +50,6 @@
             return totalCombinationsArray;
         }
         else {
-            var totalCombinationsArray = [];
             arr.forEach(function () {
                 var elem = arr.shift();
                 elem.forEach(function (element2) {
