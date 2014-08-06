@@ -107,12 +107,12 @@ exports.testGetCombinationsAlgorithm = function (test) {
 };
 
 exports.testEdgeCasesForGetCombinations = function (test) {
-    var emptyObj = {
+    var emptyValueArrayObj = {
         number: [1],
         letters: []
     };
     test.throws(function () {
-        combinationlibrary.getCombinations(emptyObj);
+        combinationlibrary.getCombinations(emptyValueArrayObj);
     }, 'Empty Values', 'error message woohoo');
 
     test.throws(function () {
@@ -126,6 +126,16 @@ exports.testEdgeCasesForGetCombinations = function (test) {
     test.throws(function () {
         combinationlibrary.getCombinations(['hello']);
     }, 'not an object input', 'error message');
+    test.done();
+};
+
+exports.testErrorThrowing = function (test) {
+  //given the getCombinations function
+    //when we pass an empty object into getCombinations
+    test.throws(function (){
+        combinationlibrary.getCombinations({});
+        //then we throw and error
+    }, 'passed in empty object', 'error message');
     test.done();
 };
 
