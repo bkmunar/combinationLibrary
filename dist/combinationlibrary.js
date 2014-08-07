@@ -1,4 +1,4 @@
-/*! combinationlibrary - v0.0.0 - 2014-08-05
+/*! combinationlibrary - v0.0.0 - 2014-08-07
 * https://github.com//combinationlibrary
 * Copyright (c) 2014 Bryan Munar and Chris Dunn; Licensed MIT */
 (function (exports) {
@@ -10,7 +10,7 @@
     };
 
     exports.getCombinations = function (object) {
-        if (!object || Object.is(object, {})) {
+        if (!(Object.keys(object).length)) {
             throw 'Input is empty or not passed in';
         }
         var keys = Object.keys(object);
@@ -58,4 +58,4 @@
         }
     };
 
-}.call(this));
+}(typeof exports === 'object' && exports || this));

@@ -15,7 +15,7 @@
     };
 
     exports.getCombinations = function (object) {
-        if (!typeof object === 'object' || !Object.keys(object).length) {
+        if (!(Object.keys(object).length)) {
             throw 'Input is empty or not passed in';
         }
         var keys = Object.keys(object);

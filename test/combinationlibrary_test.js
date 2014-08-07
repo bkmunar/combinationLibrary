@@ -116,10 +116,6 @@ exports.testEdgeCasesForGetCombinations = function (test) {
     }, 'Empty Values', 'error message woohoo');
 
     test.throws(function () {
-        combinationlibrary.getCombinations();
-    }, 'Input is empty or not passed in', 'error message woohoo');
-
-    test.throws(function () {
         combinationlibrary.getCombinations({name: 'Bryan'});
     }, 'idk the error', 'error message');
 
